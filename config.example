@@ -1,0 +1,32 @@
+# Copy this file to .env and adjust as needed.
+HOST=127.0.0.1
+PORT=8000
+DATA_DIR=./data
+
+ASR_AUTO_START=true
+ASR_HOST=127.0.0.1
+ASR_PORT=8765
+ASR_BACKEND=mlx-whisper
+ASR_MODEL=large-v3-turbo
+ASR_LANGUAGE=auto
+ASR_BACKEND_POLICY=localagreement
+ASR_PAUSE_SEGMENTATION_SECONDS=0.8
+ASR_STARTUP_TIMEOUT=1800
+
+OLLAMA_HOST=http://127.0.0.1:11434
+OLLAMA_MODEL=qwen3.5:9b-mlx
+OLLAMA_KEEP_ALIVE=30m
+
+# Optional CC Switch loopback router. Transcript text may leave this Mac.
+CC_SWITCH_ENABLED=false
+CC_SWITCH_BASE_URL=http://127.0.0.1:15721
+CC_SWITCH_MODELS=gpt-5.5
+# CC_SWITCH_API_KEY=
+
+TRANSLATION_CONCURRENCY=1
+TRANSLATION_QUEUE_SIZE=8
+TRANSLATION_MAX_ATTEMPTS=2
+
+# Optional: override the native macOS app-audio helper path.
+# APP_AUDIO_HELPER_PATH=/absolute/path/to/app-audio-helper
+APP_AUDIO_READ_TIMEOUT=10

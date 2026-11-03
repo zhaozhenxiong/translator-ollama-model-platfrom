@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Node
+web/node_modules/
+web/dist/
+
+# Swift
+native/AppAudioHelper/.build/
+native/AppAudioHelper/.swiftpm/
+
+# Local configuration
+.env
+
+# Runtime data
+data/app.db
+data/app.db-*
+data/transcripts/*.md
+data/logs/*.log
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
